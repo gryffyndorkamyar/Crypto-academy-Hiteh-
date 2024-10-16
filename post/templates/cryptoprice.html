@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قیمت ارزهای دیجیتال</title>
+    <style>
+        .crypto {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .crypto img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="crypto">
+        <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" alt="Bitcoin Logo">
+        <span>Bitcoin: ${{ bitcoin_price }}</span>
+    </div>
+    <div class="crypto">
+        <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" alt="Ethereum Logo">
+        <span>Ethereum: ${{ ethereum_price }}</span>
+    </div>
+    <div class="crypto">
+        <img src="https://assets.coingecko.com/coins/images/325/large/Tether-logo.png" alt="Tether Logo">
+        <span>Tether: ${{ tether_price }}</span>
+    </div>
+</body>
+</html>

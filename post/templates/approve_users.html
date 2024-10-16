@@ -1,0 +1,16 @@
+
+{% block content %}
+<h2>Approve Users</h2>
+<form method="post">
+    {% csrf_token %}
+    <ul>
+        {% for user in users %}
+            <li>
+                {{ user.username }}
+                <button type="submit" name="user_id" value="{{ user.id }}" formaction="?action=approve">Approve</button>
+                <button type="submit" name="user_id" value="{{ user.id }}" formaction="?action=reject">Reject</button>
+            </li>
+        {% endfor %}
+    </ul>
+</form>
+{% endblock %}
